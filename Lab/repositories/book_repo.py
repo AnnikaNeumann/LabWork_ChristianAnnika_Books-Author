@@ -1,5 +1,4 @@
-from cProfile import run
-from re import S
+
 from db.run_sql import run_sql
 
 from models.authors import Authors
@@ -17,9 +16,13 @@ def save(book):
 
 
 def select_all():
-    books = []
+    book = []
+    sql = "SELECT * FROM book"
+    results = run_sql(sql) 
+    for row in results:
+        book = Book(row['title'], row ['genre'], row ['language'], row ['author'], row ['release'])
+    return book
 
-    sql = "SELECT * FROM books"
-    results = run_sql(sql)
 
-    
+
+
