@@ -8,7 +8,6 @@ CREATE TABLE books(
     language VARCHAR(255),
     author VARCHAR(255),
     release INT
-
 );
 
 CREATE TABLE authors(
@@ -18,3 +17,11 @@ CREATE TABLE authors(
     country VARCHAR(255)
 );
 
+
+INSERT INTO book (title, genre, language, author, release);
+VALUES ('IT', 'Horror', 'English', 'Stephen King', 1988);
+
+INSERT INTO author( name, age, country);
+VALUES ('Stephen King', 74, "USA");
+
+SELECT * FROM books;
