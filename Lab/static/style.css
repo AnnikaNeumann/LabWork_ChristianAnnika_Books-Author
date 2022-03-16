@@ -1,25 +1,56 @@
 
 body {
-    background-color: rgb(162, 180, 96);
+    background-color: rgb(122, 20, 12);
 }  
- 
-header > nav{
-    background-color: aqua;
-}
 
-/* 
-.bookshelf {
-    background-color: rgb(73, 15, 15);
-    list-style-type: none;
-} */
-
-.container {
+#overlay1{
     position: relative;
-    width: 300px;
-    height: 200px;
+    display: inline-block;
+    width: 60px;
+    left: 0%;
+    right:0%; 
 }
 
-h1{
-    text-align: center;
+header > nav{
+    border: 2px;
+    border-color: black;
+    border-style: dotted;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    padding: 0px 0px 0px 2px;
+    list-style-type: none;
+}
 
+ 
+footer{
+    
+    border: 2px;
+    border-color: black;
+    border-style: dotted;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container{
+
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#book-icon{
+    width: 80px;
+    height: 70px;
+    position: relative;
+    float: right;
+    margin-right: 19cm;
+    margin-top: -40px;
 }

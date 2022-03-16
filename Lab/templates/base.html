@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Lab/static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
     <title>My Books</title>
 </head>
 <body>
@@ -11,14 +11,15 @@
     <nav>
         <ul class="bookshelf">
             <li><a href="/">Home</a></li>
-            <li> <a href="/delete_book">Delete</a></li>
+            <li> <a href="/delete_book">Delete</a></li><span></span>
             <li> <a href="/view_book">View them all</a></li>
         </ul>
     </nav>
 </header>
-<h1>You cannot buy happiness, but you can buy books - which is basically the same</h1> 
+
 <div class="container">
     <img src="./static/images/bookshelf.jpeg" alt="Image of a bookshelf">        
+<div class="centered"><h1>You cannot buy happiness, but you can buy books - which is basically the same</h1></div>
 </div>
 
     {% block content %} 
@@ -27,5 +28,8 @@
     {% endblock %} </div>
 
 </body>
+<footer>
+    <p>The shop around the corner</p><img src="./static/images/books-icon.png" alt="Book Icon" id="book-icon">
+</footer>
 </html>
 
